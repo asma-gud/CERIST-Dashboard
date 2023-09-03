@@ -14,7 +14,7 @@ const Team = () => {
     { field: "id", headerName: "ID" },
     {
       field: "name",
-      headerName: "Name",
+      headerName: "Nom",
       flex: 1,
       cellClassName: "name-column--cell",
     },
@@ -27,17 +27,17 @@ const Team = () => {
     },
     {
       field: "phone",
-      headerName: "Phone Number",
+      headerName: "Num de Tél",
       flex: 1,
     },
     {
       field: "email",
-      headerName: "Email",
+      headerName: "E-mail",
       flex: 1,
     },
     {
       field: "accessLevel",
-      headerName: "Access Level",
+      headerName: "Niveau d'accès",
       flex: 1,
       renderCell: ({ row: { access } }) => {
         return (
@@ -49,7 +49,7 @@ const Team = () => {
             justifyContent="center"
             backgroundColor={
               access === "admin"
-                ? colors.greenAccent[600]
+                ? colors.greenAccent[800]
                 : access === "manager"
                 ? colors.greenAccent[700]
                 : colors.greenAccent[700]
@@ -70,7 +70,7 @@ const Team = () => {
 
   return (
     <Box m="20px">
-      <Header title="TEAM" subtitle="Managing the Team Members" />
+      <Header title="L'ÉQUIPE" subtitle="Gérer les membres de l'équipe" />
       <Box
         m="40px 0 0 0"
         height="75vh"
@@ -85,7 +85,7 @@ const Team = () => {
             color: colors.greenAccent[300],
           },
           "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.blueAccent[100],
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {
@@ -93,7 +93,7 @@ const Team = () => {
           },
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.blueAccent[100],
           },
           "& .MuiCheckbox-root": {
             color: `${colors.greenAccent[200]} !important`,

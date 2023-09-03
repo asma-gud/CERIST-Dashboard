@@ -11,23 +11,23 @@ const Invoices = () => {
     { field: "id", headerName: "ID" },
     {
       field: "name",
-      headerName: "Name",
+      headerName: "Nom",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
       field: "phone",
-      headerName: "Phone Number",
+      headerName: "Num de Tél",
       flex: 1,
     },
     {
       field: "email",
-      headerName: "Email",
+      headerName: "E-mail",
       flex: 1,
     },
     {
       field: "cost",
-      headerName: "Cost",
+      headerName: "Coût",
       flex: 1,
       renderCell: (params) => (
         <Typography color={colors.greenAccent[500]}>
@@ -44,7 +44,7 @@ const Invoices = () => {
 
   return (
     <Box m="20px">
-      <Header title="INVOICES" subtitle="List of Invoice Balances" />
+      <Header title="FACTURES" subtitle="Liste des soldes de factures" />
       <Box
         m="40px 0 0 0"
         height="75vh"
@@ -59,7 +59,7 @@ const Invoices = () => {
             color: colors.greenAccent[300],
           },
           "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.blueAccent[100],
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {
@@ -67,7 +67,7 @@ const Invoices = () => {
           },
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.blueAccent[100],
           },
           "& .MuiCheckbox-root": {
             color: `${colors.greenAccent[200]} !important`,

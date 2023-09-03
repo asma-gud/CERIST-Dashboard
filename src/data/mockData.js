@@ -327,7 +327,7 @@ export const mockBarData = [
     kebab: 72,
     kebabColor: "hsl(97, 70%, 50%)",
     donut: 140,
-    donutColor: "hsl(340, 70%, 50%)",
+    donutColor: "hsl(140, 70%, 50%)",
   },
   {
     country: "AE",
@@ -338,7 +338,7 @@ export const mockBarData = [
     kebab: 58,
     kebabColor: "hsl(273, 70%, 50%)",
     donut: 29,
-    donutColor: "hsl(275, 70%, 50%)",
+    donutColor: "hsl(175, 70%, 50%)",
   },
   {
     country: "AF",
@@ -349,7 +349,7 @@ export const mockBarData = [
     kebab: 34,
     kebabColor: "hsl(106, 70%, 50%)",
     donut: 152,
-    donutColor: "hsl(256, 70%, 50%)",
+    donutColor: "hsl(156, 70%, 50%)",
   },
   {
     country: "AG",
@@ -360,7 +360,7 @@ export const mockBarData = [
     kebab: 43,
     kebabColor: "hsl(110, 70%, 50%)",
     donut: 83,
-    donutColor: "hsl(9, 70%, 50%)",
+    donutColor: "hsl(109, 70%, 50%)",
   },
   {
     country: "AI",
@@ -371,7 +371,7 @@ export const mockBarData = [
     kebab: 112,
     kebabColor: "hsl(54, 70%, 50%)",
     donut: 35,
-    donutColor: "hsl(285, 70%, 50%)",
+    donutColor: "hsl(185, 70%, 50%)",
   },
   {
     country: "AL",
@@ -382,7 +382,7 @@ export const mockBarData = [
     kebab: 167,
     kebabColor: "hsl(182, 70%, 50%)",
     donut: 18,
-    donutColor: "hsl(76, 70%, 50%)",
+    donutColor: "hsl(176, 70%, 50%)",
   },
   {
     country: "AM",
@@ -393,7 +393,7 @@ export const mockBarData = [
     kebab: 158,
     kebabColor: "hsl(224, 70%, 50%)",
     donut: 49,
-    donutColor: "hsl(274, 70%, 50%)",
+    donutColor: "hsl(174, 70%, 50%)",
   },
 ];
 
@@ -402,7 +402,7 @@ export const mockPieData = [
     id: "hack",
     label: "hack",
     value: 239,
-    color: "hsl(104, 70%, 50%)",
+    color: "hsl(162, 70%, 50%)",
   },
   {
     id: "make",
@@ -449,7 +449,7 @@ export const mockLineData = [
       },
       {
         x: "train",
-        y: 216,
+        y: 210,
       },
       {
         x: "subway",
@@ -503,7 +503,7 @@ export const mockLineData = [
       },
       {
         x: "train",
-        y: 9,
+        y: 100,
       },
       {
         x: "subway",
@@ -545,7 +545,7 @@ export const mockLineData = [
     data: [
       {
         x: "plane",
-        y: 191,
+        y: 101,
       },
       {
         x: "helicopter",
@@ -577,7 +577,7 @@ export const mockLineData = [
       },
       {
         x: "bicycle",
-        y: 8,
+        y: 80,
       },
       {
         x: "horse",

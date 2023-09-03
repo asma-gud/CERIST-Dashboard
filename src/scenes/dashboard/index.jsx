@@ -21,20 +21,20 @@ const Dashboard = () => {
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
+        <Header title="DASHBOARD" subtitle="Bienvenue sur votre dashboard" />
 
         <Box>
           <Button
             sx={{
               backgroundColor: colors.blueAccent[700],
-              color: colors.grey[100],
+              color: colors.grey[200],
               fontSize: "14px",
               fontWeight: "bold",
               padding: "10px 20px",
             }}
           >
             <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-            Download Reports
+            Télécharger les rapports
           </Button>
         </Box>
       </Box>
@@ -56,7 +56,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="12,361"
-            subtitle="Emails Sent"
+            subtitle="E-mails envoyés"
             progress="0.75"
             increase="+14%"
             icon={
@@ -75,7 +75,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="431,225"
-            subtitle="Sales Obtained"
+            subtitle="Ventes obtenues"
             progress="0.50"
             increase="+21%"
             icon={
@@ -94,7 +94,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="32,441"
-            subtitle="New Clients"
+            subtitle="Nouveaux clients"
             progress="0.30"
             increase="+5%"
             icon={
@@ -113,7 +113,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="1,325,134"
-            subtitle="Traffic Received"
+            subtitle="Trafic reçu"
             progress="0.80"
             increase="+43%"
             icon={
@@ -143,7 +143,7 @@ const Dashboard = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Revenue Generated
+                Revenus générés
               </Typography>
               <Typography
                 variant="h3"
@@ -180,7 +180,7 @@ const Dashboard = () => {
             p="15px"
           >
             <Typography color={colors.grey[100]} variant="h5" fontWeight="600">
-              Recent Transactions
+            Transactions récentes
             </Typography>
           </Box>
           {mockTransactions.map((transaction, i) => (
@@ -206,6 +206,7 @@ const Dashboard = () => {
               </Box>
               <Box color={colors.grey[100]}>{transaction.date}</Box>
               <Box
+              color={colors.grey[200]}
                 backgroundColor={colors.greenAccent[500]}
                 p="5px 10px"
                 borderRadius="4px"
@@ -224,7 +225,7 @@ const Dashboard = () => {
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-            Campaign
+            Campagne
           </Typography>
           <Box
             display="flex"
@@ -238,9 +239,9 @@ const Dashboard = () => {
               color={colors.greenAccent[500]}
               sx={{ mt: "15px" }}
             >
-              $48,352 revenue generated
+              $48,352 revenus générés
             </Typography>
-            <Typography>Includes extra misc expenditures and costs</Typography>
+            <Typography>Comprend diverses dépenses et coûts supplémentaires</Typography>
           </Box>
         </Box>
         <Box
@@ -253,7 +254,7 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ padding: "30px 30px 0 30px" }}
           >
-            Sales Quantity
+            Quantité vendue
           </Typography>
           <Box height="250px" mt="-20px">
             <BarChart isDashboard={true} />
@@ -270,7 +271,7 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ marginBottom: "15px" }}
           >
-            Geography Based Traffic
+            Trafic basé sur la géographie
           </Typography>
           <Box height="200px">
             <GeographyChart isDashboard={true} />

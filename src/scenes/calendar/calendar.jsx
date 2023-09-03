@@ -21,7 +21,7 @@ const Calendar = () => {
   const [currentEvents, setCurrentEvents] = useState([]);
 
   const handleDateClick = (selected) => {
-    const title = prompt("Please enter a new title for your event");
+    const title = prompt("Veuillez saisir un nouveau titre pour votre événement");
     const calendarApi = selected.view.calendar;
     calendarApi.unselect();
 
@@ -39,7 +39,7 @@ const Calendar = () => {
   const handleEventClick = (selected) => {
     if (
       window.confirm(
-        `Are you sure you want to delete the event '${selected.event.title}'`
+        `Êtes-vous sûr de vouloir supprimer l'événement '${selected.event.title}'`
       )
     ) {
       selected.event.remove();
@@ -48,7 +48,7 @@ const Calendar = () => {
 
   return (
     <Box m="20px">
-      <Header title="Calendar" subtitle="Full Calendar Interactive Page" />
+      <Header title="Calendrier" subtitle="Page interactive du calendrier complet" />
 
       <Box display="flex" justifyContent="space-between">
         {/* CALENDAR SIDEBAR */}
@@ -64,7 +64,7 @@ const Calendar = () => {
               <ListItem
                 key={event.id}
                 sx={{
-                  backgroundColor: colors.greenAccent[500],
+                  backgroundColor: colors.greenAccent[700],
                   margin: "10px 0",
                   borderRadius: "2px",
                 }}
@@ -74,7 +74,7 @@ const Calendar = () => {
                   secondary={
                     <Typography>
                       {formatDate(event.start, {
-                        year: "numeric",
+                        année: "numeric",
                         month: "short",
                         day: "numeric",
                       })}
@@ -112,12 +112,12 @@ const Calendar = () => {
             initialEvents={[
               {
                 id: "12315",
-                title: "All-day event",
+                title: "Événements d'une journée",
                 date: "2022-09-14",
               },
               {
                 id: "5123",
-                title: "Timed event",
+                title: "Événement chronométré",
                 date: "2022-09-28",
               },
             ]}

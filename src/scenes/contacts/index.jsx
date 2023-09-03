@@ -11,10 +11,10 @@ const Contacts = () => {
 
   const columns = [
     { field: "id", headerName: "ID", flex: 0.5 },
-    { field: "registrarId", headerName: "Registrar ID" },
+    { field: "registrarId", headerName: "ID registraire" },
     {
       field: "name",
-      headerName: "Name",
+      headerName: "Nom",
       flex: 1,
       cellClassName: "name-column--cell",
     },
@@ -27,27 +27,27 @@ const Contacts = () => {
     },
     {
       field: "phone",
-      headerName: "Phone Number",
+      headerName: "Num de Tél",
       flex: 1,
     },
     {
       field: "email",
-      headerName: "Email",
+      headerName: "E-mail",
       flex: 1,
     },
     {
       field: "address",
-      headerName: "Address",
+      headerName: "Adresse",
       flex: 1,
     },
     {
       field: "city",
-      headerName: "City",
+      headerName: "Cité",
       flex: 1,
     },
     {
       field: "zipCode",
-      headerName: "Zip Code",
+      headerName: "Code ZIP",
       flex: 1,
     },
   ];
@@ -56,7 +56,7 @@ const Contacts = () => {
     <Box m="20px">
       <Header
         title="CONTACTS"
-        subtitle="List of Contacts for Future Reference"
+        subtitle="Liste des contacts pour référence future"
       />
       <Box
         m="40px 0 0 0"
@@ -72,7 +72,7 @@ const Contacts = () => {
             color: colors.greenAccent[300],
           },
           "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.blueAccent[100],
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {
@@ -80,7 +80,7 @@ const Contacts = () => {
           },
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.blueAccent[100],
           },
           "& .MuiCheckbox-root": {
             color: `${colors.greenAccent[200]} !important`,
