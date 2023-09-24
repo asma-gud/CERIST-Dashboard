@@ -105,12 +105,13 @@ const Sidebar = () => {
                   variant="h2"
                   color={colors.grey[100]}
                   fontWeight="bold"
+                  fontSize={27}
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Utilisateur
+                  Bouchama Nadir
                 </Typography>
-                <Typography variant="h5" color={colors.greenAccent[500]}>
-                 poste d'utilisateur
+                <Typography variant="h5" fontWeight="semi-bold" fontSize={18} color={colors.blueAccent[400]}>
+                Chef de l'équipe systèmes ubuiquitaires
                 </Typography>
               </Box>
             </Box>
@@ -140,14 +141,14 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="Contacts"
+              title="Projets de Recherche"
               to="/contacts"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Soldes des factures"
+              title="Publications"
               to="/invoices"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}

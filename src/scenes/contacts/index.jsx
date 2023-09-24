@@ -11,52 +11,46 @@ const Contacts = () => {
 
   const columns = [
     { field: "id", headerName: "ID", flex: 0.5 },
-    { field: "registrarId", headerName: "ID registraire" },
+    { field: "registrarId", headerName: "ID projet" },
     {
-      field: "name",
-      headerName: "Nom",
+      field: "Titre",
+      headerName: "Projet",
       flex: 1,
-      cellClassName: "name-column--cell",
+      
     },
     {
-      field: "age",
-      headerName: "Age",
-      type: "number",
-      headerAlign: "left",
-      align: "left",
+      field: "Chef",
+      headerName: "Chef de projet",
+      flex:1,
     },
     {
-      field: "phone",
-      headerName: "Num de Tél",
+      field: "Membres",
+      headerName: "Membre d'équipe",
       flex: 1,
     },
     {
-      field: "email",
-      headerName: "E-mail",
+      field: "Domaine",
+      headerName: "Domaine",
       flex: 1,
     },
     {
-      field: "address",
-      headerName: "Adresse",
+      field: "Collaborateur",
+      headerName: "Collaborateur",
       flex: 1,
     },
     {
-      field: "city",
-      headerName: "Cité",
+      field: "Description",
+      headerName: "Description",
       flex: 1,
     },
-    {
-      field: "zipCode",
-      headerName: "Code ZIP",
-      flex: 1,
-    },
+   
   ];
 
   return (
     <Box m="20px">
       <Header
-        title="CONTACTS"
-        subtitle="Liste des contacts pour référence future"
+        title="PROJETS DE RECHERCHES"
+        subtitle="Liste des projets de recherche"
       />
       <Box
         m="40px 0 0 0"

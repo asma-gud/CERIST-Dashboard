@@ -8,43 +8,35 @@ const Invoices = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const columns = [
-    { field: "id", headerName: "ID" },
+    { field: "id", headerName: "ID Pub" },
     {
-      field: "name",
-      headerName: "Nom",
+      field: "titre",
+      headerName: "Titre",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
-      field: "phone",
-      headerName: "Num de Tél",
+      field: "Auteur",
+      headerName: "Auteur",
       flex: 1,
-    },
-    {
-      field: "email",
-      headerName: "E-mail",
-      flex: 1,
-    },
-    {
-      field: "cost",
-      headerName: "Coût",
-      flex: 1,
-      renderCell: (params) => (
-        <Typography color={colors.greenAccent[500]}>
-          ${params.row.cost}
-        </Typography>
-      ),
     },
     {
       field: "date",
       headerName: "Date",
       flex: 1,
     },
+    {
+      field: "Description",
+      headerName: "Description",
+      flex: 1,
+      
+    },
+    
   ];
 
   return (
     <Box m="20px">
-      <Header title="FACTURES" subtitle="Liste des soldes de factures" />
+      <Header title="Publication" subtitle="Liste des publications en tendance" />
       <Box
         m="40px 0 0 0"
         height="75vh"

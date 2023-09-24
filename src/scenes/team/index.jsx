@@ -13,31 +13,35 @@ const Team = () => {
   const columns = [
     { field: "id", headerName: "ID" },
     {
-      field: "name",
+      field: "nom",
       headerName: "Nom",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
-      field: "age",
-      headerName: "Age",
-      type: "number",
-      headerAlign: "left",
-      align: "left",
+      field: "prenom",
+      headerName: "prenom",
+      flex:1
     },
     {
       field: "phone",
       headerName: "Num de Tél",
       flex: 1,
     },
+   
     {
       field: "email",
       headerName: "E-mail",
       flex: 1,
     },
     {
+      field: "role",
+      headerName: "Role",
+      flex: 1,
+    },
+    {
       field: "accessLevel",
-      headerName: "Niveau d'accès",
+      headerName: "Type",
       flex: 1,
       renderCell: ({ row: { access } }) => {
         return (

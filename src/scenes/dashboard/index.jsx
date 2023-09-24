@@ -26,7 +26,7 @@ const Dashboard = () => {
         <Box>
           <Button
             sx={{
-              backgroundColor: colors.blueAccent[700],
+              backgroundColor: colors.blueAccent[600],
               color: colors.grey[200],
               fontSize: "14px",
               fontWeight: "bold",
@@ -74,8 +74,8 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="431,225"
-            subtitle="Ventes obtenues"
+            title="433"
+            subtitle="Publication"
             progress="0.50"
             increase="+21%"
             icon={
@@ -93,8 +93,8 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="32,441"
-            subtitle="Nouveaux clients"
+            title="325"
+            subtitle="Nouveaux chercheur"
             progress="0.30"
             increase="+5%"
             icon={
@@ -112,8 +112,8 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="1,325,134"
-            subtitle="Trafic reçu"
+            title="1,232"
+            subtitle="Projet en collaboration"
             progress="0.80"
             increase="+43%"
             icon={
@@ -140,17 +140,19 @@ const Dashboard = () => {
             <Box>
               <Typography
                 variant="h5"
-                fontWeight="600"
+                fontWeight="bold"
+                fontSize={24}
                 color={colors.grey[100]}
               >
-                Revenus générés
+                Nombre de projets
               </Typography>
               <Typography
                 variant="h3"
-                fontWeight="bold"
+                fontWeight="light"
+                fontSize={18}
                 color={colors.greenAccent[500]}
               >
-                $59,342.32
+                15 Nouvelles projets par jour
               </Typography>
             </Box>
             <Box>
@@ -180,7 +182,7 @@ const Dashboard = () => {
             p="15px"
           >
             <Typography color={colors.grey[100]} variant="h5" fontWeight="600">
-            Transactions récentes
+            Publications Récentes
             </Typography>
           </Box>
           {mockTransactions.map((transaction, i) => (
@@ -205,14 +207,7 @@ const Dashboard = () => {
                 </Typography>
               </Box>
               <Box color={colors.grey[100]}>{transaction.date}</Box>
-              <Box
-              color={colors.grey[200]}
-                backgroundColor={colors.greenAccent[500]}
-                p="5px 10px"
-                borderRadius="4px"
-              >
-                ${transaction.cost}
-              </Box>
+              
             </Box>
           ))}
         </Box>
@@ -254,7 +249,7 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ padding: "30px 30px 0 30px" }}
           >
-            Quantité vendue
+            Répartition des domaines de recherche 
           </Typography>
           <Box height="250px" mt="-20px">
             <BarChart isDashboard={true} />
@@ -271,7 +266,7 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ marginBottom: "15px" }}
           >
-            Trafic basé sur la géographie
+            Collaborateurs dans le monde
           </Typography>
           <Box height="200px">
             <GeographyChart isDashboard={true} />

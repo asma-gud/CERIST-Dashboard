@@ -41,23 +41,24 @@ const BarChart = ({ isDashboard = false }) => {
       }}
 
     keys={[
-        'hot dog',
-        'burger',
-        'sandwich',
-        'kebab',
-        'fries',
-        'donut'
+        'Big Data',
+        'AI',
+        'ML',
+        'Réseaux',
+        'Sécurité',
+        'DevOps',
+        
     ]}
-    indexBy="country"
+    indexBy="year"
     margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
     padding={0.3}
     valueScale={{ type: 'linear' }}
     indexScale={{ type: 'band', round: true }}
-    colors={{ scheme: 'blue_purple' }}
+    colors={{ scheme: 'blues' }}
     defs={[
         {
             id: 'dots',
-            type: 'patternDots',
+            
             background: 'inherit',
             color: '#38bcb2',
             size: 4,
@@ -66,7 +67,7 @@ const BarChart = ({ isDashboard = false }) => {
         },
         {
             id: 'lines',
-            type: 'patternLines',
+            
             background: 'inherit',
             color: '#eed312',
             rotation: -45,
@@ -77,13 +78,13 @@ const BarChart = ({ isDashboard = false }) => {
     fill={[
         {
             match: {
-                id: 'fries'
+                id: 'Big Data'
             },
             id: 'dots'
         },
         {
             match: {
-                id: 'sandwich'
+                id: 'AI'
             },
             id: 'lines'
         }
@@ -103,7 +104,7 @@ const BarChart = ({ isDashboard = false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: 'country',
+        legend: 'year',
         legendPosition: 'middle',
         legendOffset: 32
     }}
@@ -111,7 +112,7 @@ const BarChart = ({ isDashboard = false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: 'food',
+        
         legendPosition: 'middle',
         legendOffset: -40
     }}
